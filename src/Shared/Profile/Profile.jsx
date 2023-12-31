@@ -9,7 +9,7 @@ const Profile = () => {
         <div className="w-full px-auto">
             <div >
 
-                <div className="card w-96 border-[1px] border-white fixed z-10">
+                <div className="card w-96 border-[1px] border-white lg:fixed lg:z-10">
 
                     <div className="flex justify-around mt-7">
                         <p className="text-3xl font-bold text-[#03C988]">Md. Abu Bakar</p>
