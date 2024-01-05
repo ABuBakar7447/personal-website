@@ -1,0 +1,20 @@
+@keyframes glowing {
+    0% {
+      border-color: #03C988; /* Start color */
+      box-shadow: 0 0 5px #03C988; /* Start shadow */
+    }
+    50% {
+      border-color: #02a77a; /* Middle color */
+      box-shadow: 0 0 10px #02a77a; /* Middle shadow */
+    }
+    100% {
+      border-color: #03C988; /* End color */
+      box-shadow: 0 0 5px #03C988; /* End shadow */
+    }
+  }
+  
+  .glowing-border {
+    border: 2px solid #03C988; /* Initialing border color */
+    padding: 16px; /* Adjusting the padding as needed */
+    animation: glowing 4s infinite; /* Applying the glowing animation */
+  }

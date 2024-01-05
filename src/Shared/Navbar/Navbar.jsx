@@ -45,6 +45,9 @@ const Navbar = () => {
                             <a href="#service" className="scroll-link">Services</a>
                         </li>
                         <li>
+                            <a href="#skills" className="scroll-link">Skills</a>
+                        </li>
+                        <li>
                             <a href="#contact">Contact Me</a>
                         </li>
                     </ul>

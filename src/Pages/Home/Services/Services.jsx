@@ -1,8 +1,13 @@
 import { Icon } from "@iconify/react";
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
+import SectionHead from "../../../Components/SectionHead/SectionHead";
+
 
 const Services = () => {
-    const value = {src:"https://cdn.lordicon.com/eouimtlu.json", text:"My Services"}
+    const value = { src: "https://cdn.lordicon.com/eouimtlu.json", text: "My Services" }
+
+
+
     const services = [
         {
             "id": 1,
@@ -24,24 +29,22 @@ const Services = () => {
         },
     ]
     return (
-        <section id="service" className="mb-32">
+        <section id="service" className="mb-32 pt-[20px] scroll-smooth">
             <div>
                 <SectionTitle value={value}></SectionTitle>
             </div>
 
-            <div>
-                <p className="text-5xl mb-16">My <span className="text-[#03C988]">Specializations</span></p>
-            </div>
+            <SectionHead headone={"My"} headtwo={"Specializations"}></SectionHead>
 
+           
             <div className="grid grid-cols-12 gap-5">
                 {
                     services.map((item, index) =>
 
 
                         <div key={index} className="border border-white rounded-3xl col-span-4 text-white p-4 hover:border-[#03C988] hover:text-[#03C988]">
-                            
-                                <Icon className="w-16 h-16" icon={item.icon} />
-                            
+
+                            <Icon className="w-16 h-16" icon={item.icon} />
 
                             <p className="text-2xl font-semibold my-4">
                                 {item.service}
@@ -50,6 +53,23 @@ const Services = () => {
                             <p className="text-white">
                                 {item.details}
                             </p>
+
+
+
+                            {/* <div className="border-2 border-rose-600 w-[300px] h-[300px] my-36 rotate-45 p-5">
+                                <div className=" border-rose-600 -rotate-45">
+                                    <Icon className="w-16 h-16" icon={item.icon} />
+
+
+                                    <p className="text-2xl font-semibold my-4">
+                                        {item.service}
+                                    </p>
+
+                                    <p className="text-white">
+                                        {item.details}
+                                    </p>
+                                </div>
+                            </div> */}
 
                         </div>
                     )
