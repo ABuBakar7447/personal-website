@@ -8,7 +8,7 @@ const MyProject = () => {
     const [isHovered, setIsHovered] = useState(false);
     const values = { src: "https://cdn.lordicon.com/jkzgajyr.json", text: "My Project" }
     return (
-        <div className="mb-32">
+        <div className="my-32 scroll-smooth container">
             <div>
                 <SectionTitle value={values}></SectionTitle>
 

@@ -1,0 +1,9 @@
+/* navbar button color */
+.current-color {
+    color: #fff;
+}
+
+.icon:hover .current-color {
+    color: #03C988;
+    transition: 0.3s;
+}

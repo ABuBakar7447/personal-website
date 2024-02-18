@@ -4,7 +4,7 @@ import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 const About = () => {
     const value = { src: "https://cdn.lordicon.com/yxczfiyc.json", text: "About Me" }
     return (
-        <section id="about" className="mb-32 text-white pt-[20px] scroll-smooth">
+        <section id="about" className="text-white pt-[20px] scroll-smooth container min-h-screen">
             <div>
                 <SectionTitle value={value}></SectionTitle>
             </div>

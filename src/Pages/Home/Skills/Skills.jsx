@@ -21,9 +21,9 @@ const Skills = () => {
         },
     })
 
-    console.log(skills);
+    // console.log(skills);
     return (
-        <section id="skills" className="mb-32 pt-[20px] scroll-smooth">
+        <section id="skills" className="pt-[20px] scroll-smooth container min-h-screen">
             <div>
                 <SectionTitle value={values}></SectionTitle>
             </div>

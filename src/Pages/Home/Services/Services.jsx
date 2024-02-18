@@ -29,7 +29,7 @@ const Services = () => {
         },
     ]
     return (
-        <section id="service" className="mb-32 pt-[20px] scroll-smooth">
+        <section id="service" className="pt-[20px] scroll-smooth container min-h-screen">
             <div>
                 <SectionTitle value={value}></SectionTitle>
             </div>
