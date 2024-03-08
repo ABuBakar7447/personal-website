@@ -18,7 +18,7 @@ const ContactMe = () => {
     };
 
     return (
-        <div className='pt-[20px] scroll-smooth container min-h-screen my-10' id='contactme'>
+        <div className='pt-[20px] container min-h-screen my-10' id='contactme'>
             <div>
                 <SectionHead headone={"Let's Work"} headtwo={"Together"}></SectionHead>
             </div>

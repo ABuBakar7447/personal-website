@@ -6,7 +6,7 @@ const Introduction = () => {
     const value = { src: "https://cdn.lordicon.com/cnpvyndp.json", text: "Introduction", state: "hover-home-1" }
 
     return (
-        <section id="introduction" className="text-white pt-[20px] scroll-smooth container min-h-screen">
+        <section id="introduction" className="text-white pt-[20px] container min-h-screen">
             <div>
                 <SectionTitle value={value}></SectionTitle>
 

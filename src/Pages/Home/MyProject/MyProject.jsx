@@ -25,7 +25,7 @@ const MyProject = () => {
     })
     console.log(projectData);
     return (
-        <div id="projects" className="pt-[20px] scroll-smooth container min-h-screen">
+        <div id="projects" className="pt-[20px] container min-h-screen">
             <div>
                 <SectionTitle value={values}></SectionTitle>
 

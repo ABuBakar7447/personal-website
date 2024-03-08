@@ -17,7 +17,7 @@ const SectionTitle = ({ value }) => {
                 </lord-icon>
 
                 
-                {text}
+                <p className="text-[#fff]">{text}</p>
                 
             </div>
         </div>
