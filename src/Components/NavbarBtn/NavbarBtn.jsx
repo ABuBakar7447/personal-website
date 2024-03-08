@@ -1,6 +1,6 @@
 import '../Style/Style.css'
 
-const Navbarbtn = ({ value}) => {
+const Navbarbtn = ({ value }) => {
     
     const { src, state, href,defaultText} = value;
     const values = state;

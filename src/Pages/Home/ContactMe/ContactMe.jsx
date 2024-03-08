@@ -18,7 +18,7 @@ const ContactMe = () => {
     };
 
     return (
-        <div className='mb-16 scroll-smooth' id='contactme'>
+        <div className='pt-[20px] scroll-smooth container min-h-screen my-10' id='contactme'>
             <div>
                 <SectionHead headone={"Let's Work"} headtwo={"Together"}></SectionHead>
             </div>
@@ -36,7 +36,7 @@ const ContactMe = () => {
 
                 <label className='text-white font-bold'>Message</label>
                 <textarea name="message" className='border-b-2 rounded-t-lg border-black bg-zinc-700 text-white p-5' />
-                <input type="submit" value="Send" className='btn btn-success w-1/4 mx-auto' />
+                <input type="submit" value="Send" className='btn btn-success w-[256px] border-none bg-[#03C988] mx-auto' />
             </form>
         </div>
     );

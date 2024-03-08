@@ -1,43 +1,47 @@
 import SectionHead from "../../../Components/SectionHead/SectionHead";
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
-import img from '../../../Asset/Profile Pic.jpeg'
+import ProjectCard from "../../../Components/ProjectCard/ProjectCard";
+import ProjectDrawer from "./ProjectDrawer/ProjectDrawer";
 import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 
 const MyProject = () => {
 
-    const [isHovered, setIsHovered] = useState(false);
     const values = { src: "https://cdn.lordicon.com/jkzgajyr.json", text: "My Project" }
+
+    const [singleProject, setProjectData] = useState()
+
+    const { data: projectData = [] } = useQuery({
+        queryKey: ["projectdata"],
+
+
+        queryFn: async () => {
+            const res = await fetch('projectdata.json')
+            // console.log('res from axios', res)
+            const data = await res.json(); // Use res.json() to parse JSON response
+
+            return data;
+        },
+    })
+    console.log(projectData);
     return (
-        <div className="my-32 scroll-smooth container">
+        <div id="projects" className="pt-[20px] scroll-smooth container min-h-screen">
             <div>
                 <SectionTitle value={values}></SectionTitle>
 
                 <SectionHead headone={"Featured"} headtwo={"Projects"}></SectionHead>
             </div>
 
+            <div className="grid grid-cols-2 gap-6">
+                {projectData?.map((project,index) =><ProjectCard key={index} project={project} setProjectData={setProjectData}></ProjectCard>
 
-            <div
-                className={`relative overflow-hidden w-64 h-64 border-4 border-transparent hover:border-green-500 transition-all duration-300 ${isHovered ? 'border-green-500 border-4' : ''}`}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-            >
-                <img
-                    src={img}
-                    alt="Your Image"
-                    className={`w-full h-full transition-all duration-300 object-cover ${isHovered ? 'filter blur-md border-2 border-green-600' : ''}`}
-                />
+                    
 
-
-                {isHovered && (
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col justify-between items-center text-white">
-                        <p className="text-lg font-bold">Your Text Top</p>
-                        <p className="text-lg font-bold">Your Text Bottom</p>
-                        <a href="" className="btn btn-sm btn-primary">
-                            hello
-                        </a>
-                    </div>
                 )}
             </div>
+
+
+            <ProjectDrawer singleProject={singleProject?singleProject:''}></ProjectDrawer>
         </div>
     );
 };

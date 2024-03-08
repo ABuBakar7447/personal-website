@@ -1,0 +1,48 @@
+[
+    {
+        "id":101,
+        "title": "FoodVillage",
+        "overview": "This website specializes in food ordering, offering a seamless experience for users.Built using React, it leverages modern technology to enhance performance and interactivity.The primary emphasis during development was on crafting an intuitive and responsive front-end interface.",
+        "img1": "https://i.ibb.co/5vMxsxk/pimg-1.png",
+        "img2": "https://i.ibb.co/ZMVf425/pimg-3.png",
+        "img3": "https://i.ibb.co/nCdTFzv/pimg-2.png",
+        "feature1": "There are a variety of foods under different categories so that users can order food.",
+        "feature2": "A dashboard option for users and admin so that they can manage food items.",
+        "feature3": "The payment system is also integrated so that users can pay.",
+        "tools": ["Vite", "React JS", "React Hook Form", "Axious", "Tailwind CSS", "Daisy UI", "Firebase", "Express JS",
+            "MongoDB", "JWT"],
+        "websiteLink": "https://foodvillage-6be43.web.app/",
+        "clientLink": "https://github.com/ABuBakar7447/foodvillage-client",
+        "serverLink": "https://github.com/ABuBakar7447/foodvillage-server"
+    },
+    {
+        "id":122,
+        "title": "WedRoad",
+        "overview": "This website is dedicated to shopping for wedding items.It utilizes React for its front-end development, ensuring a dynamic user experience.The primary focus of the development process was on the front-end aspect to create a visually appealing and user-friendly interface.",
+        "img1": "https://i.ibb.co/zfgKXCx/p2img-1.png",
+        "img2": "https://i.ibb.co/0QxKWyw/p2img-2.png",
+        "img3": "https://i.ibb.co/R0FMv8P/p2img-3.png",
+        "feature1": "A dashboard option for crud option for the users, sellers, and admin.",
+        "feature2": "Users can order products from three categories.",
+        "feature3": "Authentication system applied so that valid users can do crud operation.",
+        "tools": ["React JS", "Tailwind CSS", "Daisy UI", "Firebase", "Express JS", "MongoDB", "JWT"],
+        "websiteLink": "https://used-wedding-accessories-69b55.web.app/",
+        "clientLink": "https://github.com/ABuBakar7447/used-wedding-accessories-client",
+        "serverLink": "https://github.com/ABuBakar7447/used-wedding-accessories-server"
+    },
+    {
+        "id":143,
+        "title": "GadgetFlow",
+        "overview": "This website specializes in selling electronic items, particularly laptops. It is developed using React to provide a modern and efficient front-end experience. The primary emphasis during development was on creating a user-friendly interface tailored for electronic product browsing and purchasing.",
+        "img1": "https://i.ibb.co/XJWwXbz/p3img-1.png",
+        "img2": "https://i.ibb.co/pwDXFvc/p3img-2.png",
+        "img3": "https://i.ibb.co/hKk2Rs3/p3img-3.png",
+        "feature1": "Filter and Searching facility integrated to find specific product.",
+        "feature2": "Admin can manage the website and do crud operation",
+        "feature3": "A bulk delete feature added so that admin can delete multiple product at a time",
+        "tools": ["Vite", "Typescript", "React JS", "Redux", "Redux Toolkit", "React Hook Form", "Tailwind CSS", "Daisy UI", "Firebase", "Express JS", "MongoDB", "JWT"],
+        "websiteLink": "https://gadgetflow-347ef.web.app/",
+        "clientLink": "https://github.com/ABuBakar7447/gadgetFlow-client",
+        "serverLink": "https://github.com/ABuBakar7447/GadgetFlow_server"
+    }
+]

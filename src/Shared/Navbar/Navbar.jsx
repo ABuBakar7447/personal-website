@@ -38,10 +38,17 @@ const Navbar = () => {
         },
         {
             "id": 5,
-            "src": "https://cdn.lordicon.com/kthelypq.json",
+            "src": "https://cdn.lordicon.com/jkzgajyr.json",
+            "href": "#projects",
+            "defaultText": "Projects"
+        },
+        {
+            "id": 6,
+            "src": "https://cdn.lordicon.com/nzixoeyk.json",
             "href": "#contactme",
             "defaultText": "Contact Me"
         },
+        
 
     ]
 
@@ -65,7 +72,7 @@ const Navbar = () => {
 
     return (
         <div >
-            <div className="navbar bg-base-100 lg:fixed lg:z-1">
+            <div className="navbar bg-base-100 lg:fixed lg:z-10">
                 <div className="">
                     <div className="dropdown bg-white">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
