@@ -23,7 +23,7 @@ const Profile = () => {
                         <p className="text-white mb-5">Dhaka, Bangladesh</p>
 
                         <div className="flex space-x-5 text-white mb-5">
-                            <Link to='https://bd.linkedin.com/' className="">
+                            <Link to='https://github.com/ABuBakar7447' className="">
                                 <div className="border border-white rounded-full p-3 hover:border-[#03C988] hover:text-[#03C988]">
 
                                     <Icon className="w-5 h-5" icon="uiw:github" />
@@ -31,7 +31,7 @@ const Profile = () => {
                                 </div>
                             </Link>
 
-                            <Link to=''>
+                            <Link to='https://www.linkedin.com/in/md-abu-bakar-siddiq-tapu/'>
                                 <div className="border border-white rounded-full p-3 text-white hover:border-[#03C988] hover:text-[#03C988]">
 
                                     <Icon className="w-5 h-5"  icon="akar-icons:linkedin-fill" />
@@ -39,7 +39,7 @@ const Profile = () => {
                                 </div>
                             </Link>
 
-                            <Link to=''>
+                            <Link to='https://www.facebook.com/profile.php?id=100008633739655&mibextid=ZbWKwL'>
                                 <div className="border border-white rounded-full p-3 text-white hover:border-[#03C988] hover:text-[#03C988]">
 
                                     <Icon className="w-5 h-5" icon="basil:facebook-solid" />
