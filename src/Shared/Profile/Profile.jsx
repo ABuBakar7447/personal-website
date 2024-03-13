@@ -57,7 +57,9 @@ const Profile = () => {
 
                         </div>
                         <div className="card-actions mb-3">
+                            <a href="#contactme">
                             <button className="btn btn-success w-[256px] border-none bg-[#03C988]">HIRE ME</button>
+                            </a>
                         </div>
                     </div>
                 </div>

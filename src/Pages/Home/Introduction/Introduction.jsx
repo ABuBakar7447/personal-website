@@ -32,7 +32,7 @@ const Introduction = () => {
                         </p>
                     </div>
                     <div>
-                        <h1 className="text-6xl text-[#03C988]">8+</h1>
+                        <h1 className="text-6xl text-[#03C988]">12+</h1>
                         <p>
                             Projects <br />Completed
                         </p>

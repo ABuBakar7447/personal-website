@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+// import { Link, useLocation } from "react-router-dom";
 import Navbarbtn from "../../Components/NavbarBtn/NavbarBtn";
 import '../../Components/Style/Style.css'
 import NavRoutebtn from "../../Components/NavRoutebtn/NavRoutebtn";
@@ -9,7 +9,7 @@ import NavRoutebtn from "../../Components/NavRoutebtn/NavRoutebtn";
 
 const Navbar = () => {
 
-    const location = useLocation();
+    // const location = useLocation();
 
     const values = [
         {
@@ -122,7 +122,7 @@ const Navbar = () => {
                         
 
 
-                        {location.pathname !== '/blog' && (
+                        {/* {location.pathname !== '/blog' && (
 
                             <li>
                                 <Link to="/blog" title="Blog" className="icon mt-12 py-4 border-[1px] border-white rounded-full">
@@ -138,7 +138,7 @@ const Navbar = () => {
                                 </Link>
 
                             </li>
-                        )}
+                        )} */}
 
                     </ul>
                 </div>

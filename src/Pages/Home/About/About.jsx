@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 
 
@@ -33,7 +34,7 @@ const About = () => {
                             style={{ width: "28px", height: "28px" }}>
                         </lord-icon>
 
-                        View My CV
+                        <Link to='https://drive.google.com/file/d/1lYNoykftTRmPCAwAyu3QDfXkMSQQCDje/view?usp=drive_link' target="_blank">My Resume</Link>
                     </a>
                 </div>
             </div>
