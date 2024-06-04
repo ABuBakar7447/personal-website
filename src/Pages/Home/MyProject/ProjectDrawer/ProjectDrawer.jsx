@@ -11,7 +11,7 @@ const ProjectDrawer = ({ singleProject }) => {
                 
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                    <ul className="menu p-4 lg:w-1/2 w-3/4 min-h-full bg-[#1d232a] text-base-content">
+                    <ul className="menu p-4 lg:w-1/2 w-3/4 min-h-screen bg-[#1d232a] text-base-content">
                         <p className="text-4xl font-bold text-[#03C988]">{singleProject?.title}</p>
 
                         <p className="text-lg text-white my-5">{singleProject?.overview}</p>
@@ -46,8 +46,8 @@ const ProjectDrawer = ({ singleProject }) => {
                         </p>
 
                         <div className="flex justify-start gap-10">
-                            <Link to={singleProject?.clientLink} target="_blank" className="text-white text-xl font-bold "><p>Project Link</p></Link>
-                            <Link to={singleProject?.serverLink} target="_blank" className="text-white text-xl font-bold "><p>Project Link</p></Link>
+                            <Link to={singleProject?.clientLink} target="_blank" className="text-white lg:text-xl text-[16px]  font-bold "><p>Client Code Link</p></Link>
+                            <Link to={singleProject?.serverLink} target="_blank" className="text-white lg:text-xl text-[16px] font-bold "><p>Server Code Link</p></Link>
                         </div>
 
                     </ul>
