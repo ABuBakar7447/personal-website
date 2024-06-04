@@ -7,12 +7,12 @@ import pic from "../../Asset/Profile Pic.jpeg"
 const Profile = () => {
     return (
         <div className="w-11/12 mx-auto">
-            <div >
+            <div className="">
 
-                <div className="card w-96 border-[1px] border-white lg:fixed lg:z-10">
+                <div className="card lg:w-96 w-[350px] mx-auto border-[1px] border-white lg:fixed lg:z-10">
 
                     <div className="flex justify-around mt-7">
-                        <p className="text-3xl font-bold text-[#03C988]">Md. Abu Bakar</p>
+                        <p className="lg:text-3xl text-2xl font-bold text-[#03C988]">Md. Abu Bakar</p>
                         <p className="text-white">Mern Stack <br /> Web Developer</p>
                     </div>
                     <figure className="px-10 pt-10">
