@@ -25,14 +25,14 @@ const MyProject = () => {
     })
     console.log(projectData);
     return (
-        <div id="projects" className="pt-[20px] container min-h-screen">
+        <div id="projects" className="text-white lg:pt-[20px] pt-1 mx-3 mb-24">
             <div>
                 <SectionTitle value={values}></SectionTitle>
 
                 <SectionHead headone={"Featured"} headtwo={"Projects"}></SectionHead>
             </div>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
                 {projectData?.map((project,index) =><ProjectCard key={index} project={project} setProjectData={setProjectData}></ProjectCard>
 
                     

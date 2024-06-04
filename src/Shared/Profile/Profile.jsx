@@ -6,7 +6,7 @@ import pic from "../../Asset/Profile Pic.jpeg"
 
 const Profile = () => {
     return (
-        <div className="w-full px-auto">
+        <div className="w-11/12 mx-auto">
             <div >
 
                 <div className="card w-96 border-[1px] border-white lg:fixed lg:z-10">

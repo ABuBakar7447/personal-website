@@ -23,7 +23,7 @@ const Skills = () => {
 
     // console.log(skills);
     return (
-        <section id="skills" className="pt-[20px] container min-h-screen">
+        <section id="skills" className="text-white lg:pt-[20px] pt-1 mx-3 mb-24">
             <div>
                 <SectionTitle value={values}></SectionTitle>
             </div>

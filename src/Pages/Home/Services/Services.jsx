@@ -29,7 +29,7 @@ const Services = () => {
         },
     ]
     return (
-        <section id="service" className="pt-[20px] container min-h-screen">
+        <section id="service" className="text-white lg:pt-[20px] pt-1 mx-3 mb-24">
             <div>
                 <SectionTitle value={value}></SectionTitle>
             </div>
@@ -42,7 +42,7 @@ const Services = () => {
                     services.map((item, index) =>
 
 
-                        <div key={index} className="border border-white rounded-3xl col-span-4 text-white p-4 hover:border-[#03C988] hover:text-[#03C988]">
+                        <div key={index} className="border border-white rounded-3xl lg:col-span-4 col-span-12 text-white p-4 hover:border-[#03C988] hover:text-[#03C988]">
 
                             <Icon className="w-16 h-16" icon={item.icon} />
 

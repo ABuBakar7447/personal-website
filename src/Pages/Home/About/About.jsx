@@ -5,13 +5,13 @@ import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 const About = () => {
     const value = { src: "https://cdn.lordicon.com/yxczfiyc.json", text: "About Me" }
     return (
-        <section id="about" className="text-white pt-[20px] container min-h-screen">
+        <section id="about" className="text-white lg:pt-[20px] mx-3 mb-24">
             <div>
                 <SectionTitle value={value}></SectionTitle>
             </div>
 
             <div>
-                <p className="text-[50px] font-semibold">
+                <p className="lg:text-[50px] text-[40px] font-semibold">
                     Exceptional creations emerge from the foundation of an <span className=" text-[#03C988]"> Inspiring Tale</span>.
                 </p>
             </div>
@@ -24,7 +24,7 @@ const About = () => {
                 </p>
 
 
-                <div className="mt-16">
+                <div className="mt-12">
                     <a href=""  className="flex items-center gap-2 text-[#03C988] text-xl font-semibold">
                         <lord-icon
                             src="https://cdn.lordicon.com/ijahpotn.json"

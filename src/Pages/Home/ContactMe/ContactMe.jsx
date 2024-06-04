@@ -27,17 +27,17 @@ const ContactMe = () => {
     };
 
     return (
-        <div className='pt-[20px] container min-h-screen my-10' id='contactme'>
+        <div id='contactme' className='text-white lg:pt-[20px] pt-1 mx-3 mb-24'>
             <div>
                 <SectionHead headone={"Let's Work"} headtwo={"Together"}></SectionHead>
             </div>
-            <form ref={form} onSubmit={sendEmail} className='w-3/4 flex flex-col space-y-5'>
+            <form ref={form} onSubmit={sendEmail} className='lg:w-3/4 w-full flex flex-col space-y-5'>
                 <div className='lg:flex gap-2'>
-                    <div className='lg:flex lg:flex-col gap-5 w-1/2'>
+                    <div className='flex flex-col gap-5 lg:w-1/2 w-full my-10'>
                         <label className='text-white font-bold'>Name</label>
                         <input type="text" placeholder='enter your name' name="user_name" className='border-b-2 rounded-t-lg border-black bg-zinc-700 p-3 text-white' />
                     </div>
-                    <div className='lg:flex lg:flex-col gap-5 w-1/2'>
+                    <div className='flex flex-col gap-5 lg:w-1/2 w-full my-10'>
                         <label className='text-white font-bold'>Email</label>
                         <input type="email" placeholder='enter your email' name="user_email" className='border-b-2 rounded-t-lg border-black bg-zinc-700 p-3 text-white' />
                     </div>

@@ -73,8 +73,8 @@ const Navbar = () => {
     return (
         <div >
             <div className="navbar w-[80px] bg-[#1d232a] lg:fixed lg:z-10 min-h-scree">
-                <div className="">
-                    <div className="dropdown bg-white">
+                <div className="m-2 hidden">
+                    <div className="dropdown text-green-600">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>

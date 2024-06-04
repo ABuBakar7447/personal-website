@@ -6,7 +6,7 @@ import Profile from "../../Shared/Profile/Profile";
 const Main = () => {
     return (
         <div className="max-w-[1440px] mx-auto grid grid-cols-12">
-            <div className="col-span-12 lg:col-span-4 px-12 py-5 order-2 lg:order-1">
+            <div className="col-span-12 lg:col-span-4  py-5 order-2 lg:order-1">
                 <Profile></Profile>
             </div>
             <div className="col-span-12 lg:col-span-7 order-3 lg:order-2">
