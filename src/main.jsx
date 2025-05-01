@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
     <QueryClientProvider client={queryClient}>
-      <div className=' bg-[#1d232a]'>
+      <div className=''>
         <RouterProvider router={router}></RouterProvider>
       </div>
     </QueryClientProvider>

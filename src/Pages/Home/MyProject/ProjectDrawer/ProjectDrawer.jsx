@@ -5,13 +5,13 @@ const ProjectDrawer = ({ singleProject }) => {
 
     return (
         <div>
-            <div className="drawer z-20">
+            <div className="drawer z-20 ">
                 <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
 
                 
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                    <ul className="menu p-4 lg:w-1/2 w-3/4 min-h-screen bg-[#1d232a] text-base-content">
+                    <ul className="menu p-8 lg:w-[60%] w-3/4 min-h-screen bg-[#1d232a] text-base-content">
                         <p className="text-4xl font-bold text-[#03C988]">{singleProject?.title}</p>
 
                         <p className="text-lg text-white my-5">{singleProject?.overview}</p>

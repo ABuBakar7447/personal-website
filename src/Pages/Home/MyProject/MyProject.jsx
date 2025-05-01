@@ -4,46 +4,57 @@ import ProjectCard from "../../../Components/ProjectCard/ProjectCard";
 import ProjectDrawer from "./ProjectDrawer/ProjectDrawer";
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { Link } from "react-router-dom";
 
 const MyProject = () => {
+  const values = {
+    src: "https://cdn.lordicon.com/jkzgajyr.json",
+    text: "My Project",
+  };
 
-    const values = { src: "https://cdn.lordicon.com/jkzgajyr.json", text: "My Project" }
+  const [singleProject, setProjectData] = useState();
 
-    const [singleProject, setProjectData] = useState()
+  const { data: projectData = [] } = useQuery({
+    queryKey: ["projectdata"],
 
-    const { data: projectData = [] } = useQuery({
-        queryKey: ["projectdata"],
+    queryFn: async () => {
+      const res = await fetch("projectdata.json");
+      // console.log('res from axios', res)
+      const data = await res.json(); // Use res.json() to parse JSON response
 
+      return data;
+    },
+  });
+  console.log(projectData);
+  return (
+    <div id="projects" className="text-white lg:pt-[20px] pt-1 mx-3 mb-24">
+      <div>
+        <SectionTitle value={values}></SectionTitle>
 
-        queryFn: async () => {
-            const res = await fetch('projectdata.json')
-            // console.log('res from axios', res)
-            const data = await res.json(); // Use res.json() to parse JSON response
+        <SectionHead headone={"Featured"} headtwo={"Projects"}></SectionHead>
+      </div>
 
-            return data;
-        },
-    })
-    console.log(projectData);
-    return (
-        <div id="projects" className="text-white lg:pt-[20px] pt-1 mx-3 mb-24">
-            <div>
-                <SectionTitle value={values}></SectionTitle>
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
+        {projectData?.map((project, index) => (
+          <ProjectCard
+            key={index}
+            project={project}
+            setProjectData={setProjectData}
+          ></ProjectCard>
+        ))}
+      </div>
 
-                <SectionHead headone={"Featured"} headtwo={"Projects"}></SectionHead>
-            </div>
+      <ProjectDrawer
+        singleProject={singleProject ? singleProject : ""}
+      ></ProjectDrawer>
 
-            <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
-                {projectData?.map((project,index) =><ProjectCard key={index} project={project} setProjectData={setProjectData}></ProjectCard>
-
-                    
-
-                )}
-            </div>
-
-
-            <ProjectDrawer singleProject={singleProject?singleProject:''}></ProjectDrawer>
-        </div>
-    );
+      <div className="flex justify-center my-10">
+        <Link to="/allproject" className="btn btn-success ">
+          <button>View All Project</button>
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default MyProject;

@@ -1,33 +1,42 @@
 
 
 
+
 const ProjectCard = ({ project, setProjectData }) => {
+  // const handleModelData=data=>{
+  //     setProjectData(data);
 
-    // const handleModelData=data=>{
-    //     setProjectData(data);
+  // }
 
-    // }
+  return (
+    <div className=" w-full">
+      <div key={project.id} className="w-full relative">
 
-    return (
-        <div className=" w-full">
+        <div
+          key={project.id}
+          className="backdrop-blur-sm bg-white/10 p-5 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src={project.img1}
+            alt={project.title}
+            className="rounded-xl mb-4 h-[250px]"
+          />
+          <h2 className="text-xl text-white font-semibold">{project.title}</h2>
+          <p className="text-gray-300 text-sm my-2">{project.overview}</p>
 
-
-            <div key={project.id}
-                className="w-full relative">
-                <img src={project?.img1} className="h-72 w-full rounded-xl transition duration-300 ease-in-out" alt="Your Image" />
-                <div className="absolute inset-0 flex flex-col items-center justify-end opacity-0 hover:opacity-100 transition duration-300 ease-in-out bg-black bg-opacity-50">
-                    <div className="mb-5 text-center">
-                        <p className="text-white text-lg font-bold mb-2">{project.title}</p>
-                        <button className="" onClick={() => setProjectData(project)}> <label htmlFor="my-drawer-4" className="drawer-button btn btn-success btn-sm">View Details</label></button>
-                    </div>
-
-                </div>
-
-            </div>
-
-
+          <button className="" onClick={() => setProjectData(project)}>
+              {" "}
+              <label
+                htmlFor="my-drawer-4"
+                className="drawer-button btn btn-success btn-sm"
+              >
+                View Details
+              </label>
+            </button>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default ProjectCard;
