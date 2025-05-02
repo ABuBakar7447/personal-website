@@ -3,6 +3,7 @@ import Main from "../Layout/Main/Main";
 import Home from "../Pages/Home/Home/Home";
 import Blogs from "../Pages/Blogs/Blogs";
 import AllProject from "../Pages/AllProject/AllProject";
+import AboutMe from "../Pages/AboutMe/AboutMe";
 
 
 export const router = createBrowserRouter([
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
             {
                 path:'/allproject',
                 element:<AllProject></AllProject>
+            },
+            {
+                path:'/aboutme',
+                element:<AboutMe></AboutMe>
             }
 
             

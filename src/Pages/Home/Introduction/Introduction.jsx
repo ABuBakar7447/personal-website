@@ -20,7 +20,7 @@ const Introduction = () => {
         <SectionTitle value={value}></SectionTitle>
       </div>
 
-      <div className="flex justify-start">
+      <div className="flex flex-col lg:flex-row justify-start">
         <div className="w-[30%]">
           <div>
             <div className="">
@@ -89,9 +89,9 @@ const Introduction = () => {
           </div>
         </div>
 
-        <div className="w-[60%]">
-          <div className="mb-20">
-            <h1 className="lg:text-[62px] text-[50px] font-semibold mb-5">
+        <div className="w-full lg:w-[60%]">
+          <div className="mb-20 w-full">
+            <h1 className="lg:text-[62px] text-[28px] font-semibold mb-5">
               Hey! I am <span className="text-[#03C988]"> Md. Abu Bakar,</span>{" "}
               <br />
               <span> MERN Stack Web Developer</span>
@@ -123,7 +123,7 @@ const Introduction = () => {
 
             <div data-aos="fade-up" data-aos-duration="3000">
               <a
-                href="#about"
+                href="#projects"
                 className="lg:text-[28px] text-[20px] font-semibold flex items-center"
               >
                 <p className="m-3 text-[#03C988] text-center">View Project</p>

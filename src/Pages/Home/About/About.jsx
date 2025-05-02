@@ -19,7 +19,7 @@ const About = () => {
             <div className="my-12">
                 <p>
 
-                    In the world of web programming, my journey began with a spark of self-interest that quickly grew into a passion for designing and developing web applications. The act of crafting something uniquely mine brought a profound sense of enlightenment. Over the past year, I immersed myself in web development, excelling first in frontend technologies and then mastering the intricacies of backend development. Embarking on 10 unique projects, I&rsquo;ve navigated the digital landscape. Beyond the screen, my creativity is sparked by the pages of books, thrilling adventures, and the enchanting worlds of both thriller and sci-fi movies. However, it&rsquo;s the football field that brings me joy, contributing to my continuous journey of learning and creative expression
+                    In the world of web programming, my journey began with a spark of self-interest that quickly grew into a passion for designing and developing web applications. The act of crafting something uniquely mine brought a profound sense of enlightenment. Over the past year, I immersed myself in web development, excelling first in frontend technologies and then mastering the intricacies of backend development. Embarking on 10 unique projects, I&rsquo;ve navigated the digital landscape. Beyond the screen, my creativity is sparked by the pages of books, thrilling adventures, and the enchanting worlds of both thriller and sci-fi movies. However, it&rsquo;s the football field that brings me joy, contributing to my continuous journey of learning and creative expression<span className="text-[#03C988] font-semibold"><Link to='/aboutme'> ....Learn More</Link></span>
 
                 </p>
 
@@ -34,7 +34,7 @@ const About = () => {
                             style={{ width: "28px", height: "28px" }}>
                         </lord-icon>
 
-                        <Link to='https://drive.google.com/file/d/1lYNoykftTRmPCAwAyu3QDfXkMSQQCDje/view?usp=drive_link' target="_blank">My Resume</Link>
+                        <Link to='https://drive.google.com/file/d/1od6PIFbne03qBaKvlQx8Hn2yjFtpV0Fk/view?usp=sharing' target="_blank">My Resume</Link>
                     </a>
                 </div>
             </div>

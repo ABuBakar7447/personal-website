@@ -65,6 +65,12 @@ const Navbar = () => {
       src: "https://cdn.lordicon.com/lyrrgrsl.json",
       defaultText: "Blog",
     },
+    {
+        id:4,
+        link:"/aboutme",
+        src:"https://cdn.lordicon.com/jnzhohhs.json",
+        defaultText:"About Me"
+    }
   ];
 
   return (
