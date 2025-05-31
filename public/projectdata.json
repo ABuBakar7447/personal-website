@@ -41,7 +41,7 @@
         "feature2": "Admin can manage the website and do crud operation",
         "feature3": "A bulk delete feature added so that admin can delete multiple product at a time",
         "tools": ["Vite", "Typescript", "React JS", "Redux", "Redux Toolkit", "React Hook Form", "Tailwind CSS", "Daisy UI", "Firebase", "Express JS", "MongoDB", "JWT"],
-        "websiteLink": "https://gadgetflow-347ef.web.app/",
+        "websiteLink": "https://gadget-flow-client.vercel.app/",
         "clientLink": "https://github.com/ABuBakar7447/gadgetFlow-client",
         "serverLink": "https://github.com/ABuBakar7447/GadgetFlow_server"
     }

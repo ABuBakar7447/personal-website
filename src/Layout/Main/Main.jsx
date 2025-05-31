@@ -19,6 +19,15 @@ const Main = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+   
+  // doing below any page will start from the top not from the middle of the page when we change routes
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     // <div className="w-[90%] mx-auto grid grid-cols-12">
     //     <div className="col-span-12 lg:col-span-4 py-5 order-2 lg:order-1">
